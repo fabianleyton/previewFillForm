@@ -24,8 +24,6 @@
         var widthImagen = $("#imgpreview").width();
         var heightImagen = $("#imgpreview").height();
         
-        //jQuery("#caja_flotante").css({display : 'block' });        
-        
         //redimensiona el area para hacer zoom en la imagen al doble en atributo ancho
         jQuery("#caja_flotante").css({width : selection.width * factorAumento});
         jQuery("#previewZoom").css({width : selection.width * factorAumento});
