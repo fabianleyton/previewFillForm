@@ -32,8 +32,18 @@ and open the template in the editor.
             }
         });
     });
-    
-            
+    var arrayCoordinates = [];
+    function setCoordinate(field, x1, y1, x2, y2, img){
+        var objCoordinates = {};
+        objCoordinates.fieldName = field;
+        objCoordinates.x1 = x1;
+        objCoordinates.x1 = x1;
+        objCoordinates.x1 = x1;
+        objCoordinates.x1 = x1;
+        objCoordinates.img = img;
+        return objCoordinates;
+    }
+  
   </script>
 <style>
     #lblCoordenadas{
@@ -87,7 +97,8 @@ and open the template in the editor.
                         pagina 2<input type="radio" name="pagina" id="pagina" value="2" <? if($_REQUEST["pagina"]==2) echo "checked"; ?>>
                         pagina 3<input type="radio" name="pagina" id="pagina" value="3" <? if($_REQUEST["pagina"]==3) echo "checked"; ?>>
                         pagina 4<input type="radio" name="pagina" id="pagina" value="4" <? if($_REQUEST["pagina"]==4) echo "checked"; ?>>
-                        <input type="submit" name="submit" value="Submit" />
+                        <!-- <input type="submit" name="submit" value="Submit" /> -->
+                        <button id="btnCapturarCoordinates" class="btn btn-default" >
                     </td>
                 </tr>
             </table>
